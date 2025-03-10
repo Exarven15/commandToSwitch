@@ -4,9 +4,12 @@
 Ce script PowerShell permet de se connecter à des switches via SSH, d'interagir avec eux, et d'exécuter des commandes pour récupérer des informations diverses. Il offre une interface interactive pour sélectionner un switch à partir d'un fichier CSV, se connecter au switch via SSH, et exécuter des commandes comme display interface brief, display vlan, display device, etc. Le script permet également une gestion sécurisée des mots de passe avec la fonctionnalité super pour passer en mode super administrateur sur le switch.
 Prérequis
 
-    PowerShell 7.0 ou version supérieure.
-    Le module SSH pour PowerShell doit être installé. Il peut être installé via Install-Module -Name Posh-SSH.
-    Un fichier CSV contenant les informations des switches, avec un séparateur ;. Ce fichier doit avoir au moins deux colonnes : Name (Nom du switch) et Hostname (Adresse IP du switch).
+PowerShell 7.0 ou version supérieure.
+Le module SSH pour PowerShell doit être installé. Il peut être installé via 
+    
+    Install-Module -Name Posh-SSH.
+    
+Un fichier CSV contenant les informations des switches, avec un séparateur ;. Ce fichier doit avoir au moins deux colonnes : Name (Nom du switch) et Hostname (Adresse IP du switch).
 
 ## Fonctionnalités
 

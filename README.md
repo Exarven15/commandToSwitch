@@ -109,8 +109,8 @@ Execution de la commande : display interface brief...
 
 Dépannage
 
-    Erreur de connexion SSH : Assurez-vous que le nom d'utilisateur, le mot de passe SSH et le mot de passe super sont corrects.
-    Commande non reconnue : Vérifiez que le switch prend bien en charge les commandes spécifiées dans le tableau des commandes.
+Erreur de connexion SSH : Assurez-vous que le nom d'utilisateur, le mot de passe SSH et le mot de passe super sont corrects.
+Commande non reconnue : Vérifiez que le switch prend bien en charge les commandes spécifiées dans le tableau des commandes.
 
 Licence
 

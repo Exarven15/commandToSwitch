@@ -16,7 +16,6 @@ Un fichier CSV contenant les informations des switches, avec un séparateur ;. C
     Chargement de la liste des switches depuis un fichier CSV.
     Sélection d'un switch : l'utilisateur peut choisir un switch dans une liste interactive générée par le script.
     Connexion SSH : l'utilisateur peut se connecter à un switch en utilisant un nom d'utilisateur et un mot de passe pour SSH.
-    Mode super administrateur : après une connexion SSH, le script passe en mode super avec un mot de passe spécifique, permettant ainsi l'exécution de commandes avancées.
     Exécution de commandes : après s'être connecté, l'utilisateur peut choisir parmi plusieurs commandes pour interagir avec le switch.
 
 # Utilisation
@@ -29,6 +28,7 @@ Switch2	192.168.1.2
 ...	...
 
 Le fichier doit être séparé par un point-virgule ;.
+
 ## 2. Lancer le script
 
 Pour exécuter le script, suivez ces étapes :
@@ -39,11 +39,13 @@ Pour exécuter le script, suivez ces étapes :
 
     .\nom_du_script.ps1
 
-    Le script va vérifier l'existence du fichier CSV et afficher un tableau interactif des switches disponibles, avec un numéro associé à chaque switch.
+    Le script va vérifier l'existence du fichier CSV et afficher un tableau interactif des switches disponibles, 
+    avec un numéro associé à chaque switch.
 
 ## 3. Sélectionner un switch
 
 Le script vous demandera d'entrer le numéro du switch que vous souhaitez administrer. Si vous entrez "0", le script se termine.
+
 ## 4. Connexion SSH
 
 Après avoir sélectionné un switch, le script vous demandera :

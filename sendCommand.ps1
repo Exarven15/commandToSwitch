@@ -1,4 +1,4 @@
-$fichier = "liste_addr.csv"
+$fichier = "chemins_fichier.csv"
 
 # Vérifier si le fichier existe
 if (-Not (Test-Path $fichier)) {
@@ -54,8 +54,6 @@ if ($choix -eq '0') {
         Write-Output "Numero invalide, veuillez reessayer."
     }
 }
-
-
 # Demande des informations pour la connexion SSH
 $sshUsername = Read-Host "Entrez le nom d'utilisateur pour la connexion SSH"
 $sshPassword = Read-Host "Entrez le mot de passe pour la connexion SSH" -AsSecureString
@@ -79,7 +77,7 @@ try {
     # Lecture du prompt initial
     $stream.Read()
 
-    # Envoi de la commande 'super'
+    # Envoi de la commande 'super' ou 'su'.
     $stream.WriteLine("super")
     Start-Sleep -Seconds 1
     $output = $stream.Read()
@@ -102,7 +100,7 @@ try {
         Write-Host "Connexion reussie en mode super."
     }
 
-    # Liste des commandes disponibles
+    # Liste des commandes disponibles, on peut en rajouter le nombre que l'on veut.
     $availableCommands = @(
         "display interface brief",
         "display vlan",
@@ -110,7 +108,7 @@ try {
         "display current-configuration"
         "display logbuffer reverse"
     )
-
+    # cette fonction ne marche pas tout le temps.
     <# Fonction pour gérer les sorties paginées (--More--)
     function Get-FullCommandOutput {
         param ($stream)
